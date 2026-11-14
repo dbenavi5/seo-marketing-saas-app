@@ -34,14 +34,10 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(120,119,198,0.3),transparent_50%)]" />
         <div className="relative mx-auto max-w-7xl px-4 py-20 sm:py-32 lg:px-8">
           <div className="text-center">
-            <Badge className="mb-4 bg-linear-to-r! from-blue-500/20 to-purple-500/20 text-blue-700 dark:text-blue-300 border-blue-500/30 hover:from-blue-500/30 hover:to-purple-500/30">
-              <Sparkles className="w-3 h-3 mr-1 text-yellow-500 dark:text-yellow-600" />
+            <Badge className="mb-4 h-auto rounded-full border border-blue-500/30 bg-transparent bg-linear-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 px-3 py-1 text-blue-700 transition-colors hover:bg-transparent hover:from-blue-500/30 hover:to-purple-500/30 dark:text-blue-300">
+              <Sparkles className="text-yellow-500" />
               Powered by Bright Data & OpenAI
             </Badge>
-            {/* <div className="mb-4 bg-linear-to-r from-blue-500/20 to-purple-500/20 text-blue-700 dark:text-blue-300 border-blue-500/30 hover:from-blue-500/30 hover:to-purple-500/30">
-              Testing Tailwind v4
-            </div> */}
-
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl">
               <span className="bg-linear-to-r from-slate-900 via-blue-900 to-slate-900 dark:from-white dark:via-blue-100 dark:to-white bg-clip-text text-transparentt">
                 Generate Beautiful
@@ -109,7 +105,7 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
             {/* Starter Plan */}
-            <Card className="relative overflow-hidden border-2 border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 group bg-linear-to-br from-blue-50/50 to-cyan-50/50 fark:from-blue-950/50 dark:to-cyan-950/50">
+            <Card className="relative overflow-hidden border-2 border-blue-200 dark:border-blue-800 hover:border-blue-400 dark:hover:border-blue-600 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 group bg-linear-to-br from-blue-50/50 to-cyan-50/50 dark:from-blue-950/50 dark:to-cyan-950/50">
               <div className="absolute top-0 right-0 w-32 h-32 bg-linear-to-br from-blue-400/20 to-cyan-400/20 rounded-full -translate-y-16 translate-x-16" />
               <CardHeader className="relative">
                 <div className="flex items-center gap-3 mb-2">
@@ -256,14 +252,12 @@ export default function Home() {
             </Card>
 
             {/* Pro Pricing */}
-            <Card className="border-2 border-purple-300 dark:border-purple-700 hover:border-purple-500 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 relative bg-linear-to-br from-purple-50/80 via-pink-50/80 to-rose-50/80 dark:from-purple-950/80 dark:via-pink-950/80 dark:to-rose-950/80">
+            <Card className="relative overflow-visible border-2 border-purple-300 dark:border-purple-700 hover:border-purple-500 hover:shadow-xl hover:shadow-purple-500/20 transition-all duration-300 bg-linear-to-br from-purple-50/80 via-pink-50/80 to-rose-50/80 dark:from-purple-950/80 dark:via-pink-950/80 dark:to-rose-950/80">
+              <Badge className="absolute top-0 left-1/2 z-10 -translate-x-1/2 -translate-y-1/2 bg-linear-to-r from-purple-600 to-pink-600 text-white border-0">
+                Most Popular
+              </Badge>
               <CardHeader className="text-center pb-8">
-                <div className="flex items-center justify-start">
-                  <Badge className="bg-linear-to-r from-purple-600 to-pink-600 text-white border-0">
-                    Most Popular
-                  </Badge>
-                  <CardTitle className="ml-18 text-xl mb-2 mt-3">Pro</CardTitle>
-                </div>
+                <CardTitle className="text-xl mb-2">Pro</CardTitle>
                 <div className="flex items-baseline justify-center gap-1">
                   <span className="text-4xl font-bold bg-linear-to-r from-purple-600 via-pink-600 to-rose-600 bg-clip-text text-transparent">
                     $49
@@ -282,9 +276,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
-                    <span className="text-sm">
-                      AI Chat with reports
-                    </span>
+                    <span className="text-sm">AI Chat with reports</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle className="w-4 h-4 text-green-600" />
